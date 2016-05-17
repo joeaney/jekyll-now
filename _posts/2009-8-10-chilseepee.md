@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 72
+title: "72"
 ---
 
 72는 종종 떠오르는 습관이 있다.
