@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Antarctica
+tags: summary
 ---
 
 '남극으로'는 저속 기어장치로 제어되는 레이저포인터가 부착된 스탠드와 고화질로 인쇄된 대형 지도가 짝을 이루는 작품이다.
