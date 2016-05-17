@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A flank of the world
+tags: essay
 ---
 
 우선 우리가 왜 Data Visualization에 접근하고자 하는지 알려야 할 것 같습니다. 저희는 Data Visualization이 이 세계의 한 측면을 관찰하는데 아주 효과적인 수단이라고 판단했습니다. 이를 위해 우리는 Processing과 Arduino를 사용할 것이고, Processing을 위해 컴퓨터를 사용할 것입니다. Arduino 또한 일종의 컴퓨터이기 때문에 우리는 두 대의 컴퓨터를 사용하게 됩니다.
