@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 무제
+tags: fiction
 ---
 
 우린 가방을 짊어지고 재빨리 걸어갔다
