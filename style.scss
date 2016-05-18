@@ -10,8 +10,8 @@
 // Syntax highlighting @import is at the bottom of this file
 
 body {
-    line-height: 1.3;
-    font-size: 18px;
+    line-height: calc(1.55vmax + 11px);
+    font-size: calc(1.007vmax + 10px);
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
