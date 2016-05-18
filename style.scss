@@ -14,6 +14,13 @@ body {
     font-size: calc(1.007vmax + 10px);
 }
 
+h1 {
+    font-size: calc(5vmax + 9px);
+    font-weight: 900;
+    line-height: calc(4vmax + 19px);
+    margin-bottom: 2vmax;
+}
+
 div#main {
     width: 60vw;
     min-width: 340px;
