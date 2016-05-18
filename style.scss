@@ -28,6 +28,10 @@ div#main {
     float: left;
 }
 
+div#main, .wrapper-masthead {
+    margin: 1vmax;
+}
+
 .entry {
     margin-bottom: calc(3vmax + 50px);
 }
@@ -35,6 +39,7 @@ div#main {
 p {
     margin-top: 0.3vmax;
     margin-bottom: 1.3vmax;
+    text-indent: 1.3vmax;
 }
 
 .wrapper-masthead {
