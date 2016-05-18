@@ -28,6 +28,15 @@ div#main {
     float: left;
 }
 
+.entry {
+    margin-bottom: calc(3vmax + 50px);
+}
+
+p {
+    margin-top: 0.3vmax;
+    margin-bottom: 1.3vmax;
+}
+
 .wrapper-masthead {
     float: left;
     /* position: fixed; */
