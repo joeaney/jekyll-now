@@ -68,6 +68,17 @@ p {
     width: 20vw;
 }
 
+.pagination {
+  margin-top: 4vmax;
+}
+
+.pagination span.previous {
+    float: left;
+}
+
+.pagination span.next {
+    float: right;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
