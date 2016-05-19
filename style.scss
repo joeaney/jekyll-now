@@ -69,14 +69,15 @@ p {
 }
 
 .pagination {
+  text-align: center;
   margin-top: 4vmax;
 }
 
-.pagination span.previous {
+.pagination .previous {
     float: left;
 }
 
-.pagination span.next {
+.pagination .next {
     float: right;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
