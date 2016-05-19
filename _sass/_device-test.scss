@@ -1,0 +1,22 @@
+/* Portrait and Landscape */
+@media only screen
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    div#main {
+        padding-top: 20vh;
+    }
+
+    .wrapper-masthead {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 20vh;
+    overflow-y: hidden;
+    }
+    
+    .wrapper-masthead li {
+    display: table-cell;
+    }
+}

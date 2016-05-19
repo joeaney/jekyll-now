@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "device-test";
 // Syntax highlighting @import is at the bottom of this file
 
 body {
@@ -66,6 +67,10 @@ p {
     /* position: fixed; */
     top: 0;
     width: 20vw;
+}
+
+nav li {
+    margin-bottom: calc(0.8vh + 5px);
 }
 
 .pagination {
