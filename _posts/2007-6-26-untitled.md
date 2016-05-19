@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poet
 title: 무제
 tags: fiction
 ---
