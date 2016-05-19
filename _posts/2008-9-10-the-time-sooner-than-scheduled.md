@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: poet
 title: 예정보다 빠른 시각
 tag: [fiction, draft]
 ---
