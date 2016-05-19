@@ -33,10 +33,18 @@
 
           <nav>
             <ul>
-              <li><a href="{{ site.baseurl }}/">Blog</a></li>
-              <li><a href="{{ site.baseurl }}/about">About</a></li>
+                <ul>
+                  <li><a href="{{ site.baseurl }}/">Blog</a></li>
+                  <li><a href="{{ site.baseurl }}/about">About</a></li>
+                </ul>
                 {% for post in site.posts %}
-              <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>, {{ post.tags | join: ", " }} {{ post.date | date: "%Y" }}</li>
+                <ul>
+                  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><li>
+                    <ul>
+                      <li>{{ post.tags | join: ", " }}</li>
+                      <li>{{ post.date | date: "%Y" }}</li>
+                    </ul>
+                </ul>
                 {% endfor %}
             </ul>
           </nav>
