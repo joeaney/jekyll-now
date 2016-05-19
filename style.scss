@@ -41,6 +41,10 @@ a:visited {
     text-decoration: line-through;
 }
 
+ul {
+    margin-bottom: calc(1vmax + 10px);
+}
+
 div#main {
     width: 60vw;
     min-width: 300px;
@@ -70,7 +74,7 @@ p {
 }
 
 nav li {
-    margin-bottom: calc(0.8vh + 5px);
+    line-height: calc(0.3vmax + 100%);
 }
 
 .pagination {
