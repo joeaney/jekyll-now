@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+// @import "device-test";
 // Syntax highlighting @import is at the bottom of this file
 
 body {
@@ -14,7 +15,7 @@ body {
     font-size: calc(1.007vmax + 10px);
 }
 
-h1 {
+h1, .site-name {
     font-size: calc(5vmax + 9px);
     font-weight: 900;
     line-height: calc(4vmax + 19px);
@@ -40,6 +41,10 @@ a:visited {
     text-decoration: line-through;
 }
 
+ul {
+    margin-bottom: calc(1vmax + 10px);
+}
+
 div#main {
     width: 60vw;
     min-width: 300px;
@@ -61,6 +66,12 @@ p {
     text-indent: 1.3vmax;
 }
 
+.poet p {
+    margin-top: 0.3vmax;
+    margin-bottom: 2.3vmax;
+    text-indent: 0;
+}
+
 .wrapper-masthead {
     float: left;
     /* position: fixed; */
@@ -68,6 +79,22 @@ p {
     width: 20vw;
 }
 
+nav li {
+    line-height: calc(0.3vmax + 100%);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 4vmax;
+}
+
+.pagination .previous {
+    float: left;
+}
+
+.pagination .next {
+    float: right;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

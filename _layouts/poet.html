@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="poet">
+  <h1>{{ page.title }}</h1> <span class="date"></span>{{ page.date | date: "%B %e, %Y" }}</span>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html %}
+</article>
