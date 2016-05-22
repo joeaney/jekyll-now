@@ -45,15 +45,15 @@ ul {
     margin-bottom: calc(1vmax + 10px);
 }
 
-div#main {
-    width: 60vw;
-    min-width: 300px;
-    max-width: 1024px;
-    float: left;
+.wrapper-masthead {
+    height: 5vh;
 }
 
 div#main, .wrapper-masthead {
     margin: 1vmax;
+    width: 60vw;
+    min-width: 300px;
+    max-width: 1024px;
 }
 
 .entry {
@@ -73,14 +73,17 @@ p {
 }
 
 .wrapper-masthead {
-    float: left;
-    /* position: fixed; */
     top: 0;
-    width: 20vw;
+}
+
+nav {
+    position: fixed;
 }
 
 nav li {
     line-height: calc(0.3vmax + 100%);
+    display: inline-flex;
+    margin-right: 2vw;
 }
 
 .pagination {
