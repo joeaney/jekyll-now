@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 남자를 죽인 여자
+title: 종착지
 tags: [fiction, draft]
 ---
 ​

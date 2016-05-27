@@ -43,8 +43,26 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ul, ol {
+
+}
+
+.entry ul, .entry ol {
+  margin-left: 2vmax;
+}
+
+ul {
   list-style: none;
+  margin-bottom: calc(1vmax + 10px);
+}
+
+ol {
+  list-style-type: decimal;
+  display: block;
+}
+
+li p {
+  text-indent: 0;
 }
 
 blockquote, q {
@@ -76,18 +94,46 @@ body {
   margin: 1vmin;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1, .site-name {
   font-size: calc(5vmax + 9px);
   font-weight: 900;
   line-height: calc(4vmax + 19px);
+
+  margin-bottom: 2vmax;
+}
+
+.entry h1 {
+  font-size: calc(4vmax + 9px);
+  font-weight: 900;
+  line-height: calc(4vmax + 19px);
+
   margin-bottom: 2vmax;
 }
 
 h2 {
-  font-size: xx-large;
+  font-size: calc(3vmax + 9px);
+  font-weight: 800;
+
+  line-height: calc(4vmax + 10px);
+
   margin-left: 1.3vw;
-  margin-top: 3.3vw;
-  margin-bottom: 1.3vw;
+  margin-top: calc(3.3vmax + 10px);
+  margin-bottom: 1.3vmax;
+}
+
+h3 {
+  font-size: calc(2vmax + 5px);
+  font-weight: 500;
+
+  line-height: calc(4vmax + 10px);
+
+  margin-left: 1.3vw;
+  margin-top: calc(3.3vmax + 10px);
+  margin-bottom: 1.3vmax;
 }
 
 a, a:link {
@@ -102,14 +148,33 @@ a:visited {
   text-decoration: line-through;
 }
 
-ul {
-  margin-bottom: calc(1vmax + 10px);
+// basic table setting
+table {
+    width: 100%;
+    margin: 2vmax;
+}
+
+th {
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    background-color: #edeeed;
+}
+
+td {
+  margin: 1vmax;
+}
+
+tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+
+tr:hover {
+  background-color: #edeeed;
 }
 
 .wrapper-masthead {
   height: 5vmax;
-  margin-left:auto;
-  margin-right:auto;
   top: 0;
 }
 
@@ -118,9 +183,11 @@ ul {
 }
 
 .container {
-  min-width: 300px;
-  max-width: 1024px;
-  width: 100%;
+    min-width: 300px;
+    max-width: 1024px;
+    width: calc(70vw + 1em);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .entry {
@@ -153,24 +220,29 @@ nav li {
   margin-right: 2vw;
 }
 
+// pagination setting
+
 .pagination {
   text-align: center;
   margin-top: 4vmax;
+  margin-bottom: 4vmax;
 }
 
 .pagination .previous {
-  float: left;
+    float: left;
+    margin-left: 10vw;
 }
 
 .pagination .next {
   float: right;
+  margin-right: 10vw;
 }
 
  // codex page stylling
 
  .codex {
      column-count: auto;
-     column-width: 30vmax;
+     column-width: calc(15vmax + 30px);
      column-gap: 3vmin;
  }
 
@@ -180,7 +252,32 @@ nav li {
      margin-left: 1vw;
  }
 
+// footnote setting
+sup {
+  vertical-align: super;
+  font-size: calc(1.1vmax + 5px);
+}
+
+div.footnotes::before {
+  content: "Footnotes";
+  font-size: calc(3vmax + 9px);
+  font-weight: 800;
+
+  line-height: calc(4vmax + 10px);
+
+  margin-left: 1.3vw;
+  margin-top: calc(3.3vmax + 10px);
+  margin-bottom: 1.5vmax;
+}
+
+div.footnotes {
+    margin-top: 5vmax;
+    margin-left: 1vmax;
+    margin-right: 2vmax;
+    font-size: calc(0.9vmax + 10px);
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
+// @import "svg-icons";
