@@ -1,5 +1,7 @@
 ---
+layout: poet
 title: 침몰하는 땅
+tags: fiction
 ---
 그때 이 땅이 침몰하기 시작했다
 우리가 그 침몰을 감지했을 때

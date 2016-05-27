@@ -1,5 +1,7 @@
 ---
+layout: poet
 title: 율법
+tags: fiction
 ---
 율법이 작성될 때마다
 문이 열리고 천사가 방에 들어온다
