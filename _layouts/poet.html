@@ -3,7 +3,8 @@ layout: default
 ---
 
 <article class="poet">
-  <h1>{{ page.title }}</h1> <span class="date"></span>{{ page.date | date: "%B %e, %Y" }}</span>
+  <h1>{{ page.title }}</h1>
+  <p class="date">{{ page.date | date: "%B %e, %Y" }}</span>
 
   <div class="entry">
     {{ content }}
