@@ -41,13 +41,15 @@ google_analytics: UA-78070436-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: localhost:4000/joeaney
+url: http://localhost:4000 # setting for local work
+# url: https://joeaney.github.io #setting for githubio
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "localhost:4000/joeaney"
+baseurl: "" # setting for local work
+# baseurl: "https://joeaney.github.io" #setting for githubio
 
 #pagenation
 paginate: 1
@@ -89,3 +91,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor #only for local Settings
