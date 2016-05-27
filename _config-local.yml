@@ -48,7 +48,7 @@ url: http://localhost:4000 # setting for local work
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/" # setting for local work
+baseurl: "/joeaney" # setting for local work
 # baseurl: "https://joeaney.github.io" #setting for githubio
 
 #pagenation
@@ -82,7 +82,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-pagenate
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
