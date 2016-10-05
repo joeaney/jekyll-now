@@ -9,17 +9,19 @@
 1. City or country of origin [[ biographies.city or user.input ]]
 
 1. Type of Artwork [[ video, installation, painting, performance ]]
-    if [[ video ]]  1. Main performers
-    if [[ video ]]  1. Publisher / sponsor
-    if [[ video ]]  1. Technical Specs: Duration
-    if [[ video ]]  1. Technical Specs: Media
-    if [[ video ]]  1. Technical Specs: Sound Channel
-    if [[ video ]]  1. Technical Specs: Video Channel
 
-    if [[ installation ]]  1. Size
+1. if [[ video ]]  Main performers
+1. if [[ video ]]  Publisher / sponsor
+1. if [[ video ]]  Technical Specs: Duration
+1. if [[ video ]]  Technical Specs: Media
+1. if [[ video ]]  Technical Specs: Sound Channel
+1. if [[ video ]]  Technical Specs: Video Channel
+1. if [[ video ]]  Steff: Roll
 
-    if [[ painting ]]  1. Material or medium
-    if [[ painting ]]  1. Size
+1. if [[ installation ]]  Size
+
+1. if [[ painting ]]  Material or medium
+1. if [[ painting ]]  Size
 
 1. External Links
 
