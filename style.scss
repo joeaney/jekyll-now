@@ -1,3 +1,15 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// @import "device-test";
+// Syntax highlighting @import is at the bottom of this file
+
 /***************/
 /* MEYER RESET */
 /***************/
@@ -31,62 +43,8 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
+ul, ol {
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/***************/
-/* MEYER RESET */
-/***************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 90%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 .entry ul, .entry ol {
@@ -128,9 +86,11 @@ table {
   box-sizing: border-box;
 }
 
+// reset done
+
 body {
   line-height: calc(1.75vmax + 13px);
-  font-size: 100%;
+  font-size: calc(1.007vmax + 10px);
   margin: 1vmin;
 }
 
@@ -139,9 +99,10 @@ strong {
 }
 
 h1, .site-name {
-  font-size: 100%;
+  font-size: calc(5vmax + 9px);
   font-weight: 900;
-  /* line-height: calc(4vmax + 19px); */
+  line-height: calc(4vmax + 19px);
+
   margin-bottom: 2vmax;
 }
 
@@ -149,22 +110,27 @@ h1, .site-name {
   font-size: calc(4vmax + 9px);
   font-weight: 900;
   line-height: calc(4vmax + 19px);
+
   margin-bottom: 2vmax;
 }
 
 h2 {
-  font-size: 90%;
+  font-size: calc(3vmax + 9px);
   font-weight: 800;
-  /* line-height: calc(4vmax + 10px); */
+
+  line-height: calc(4vmax + 10px);
+
   margin-left: 1.3vw;
-  /* margin-top: calc(3.3vmax + 10px); */
+  margin-top: calc(3.3vmax + 10px);
   margin-bottom: 1.3vmax;
 }
 
 h3 {
   font-size: calc(2vmax + 5px);
   font-weight: 500;
+
   line-height: calc(4vmax + 10px);
+
   margin-left: 1.3vw;
   margin-top: calc(3.3vmax + 10px);
   margin-bottom: 1.3vmax;
@@ -182,16 +148,17 @@ a:visited {
   text-decoration: line-through;
 }
 
+// basic table setting
 table {
-  width: 100%;
-  margin: 2vmax;
+    width: 100%;
+    margin: 2vmax;
 }
 
 th {
-  text-align: left;
-  font-weight: 600;
-  border-bottom: 2px solid black;
-  background-color: #edeeed;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    background-color: #edeeed;
 }
 
 td {
@@ -216,11 +183,11 @@ tr:hover {
 }
 
 .container {
-  min-width: 300px;
-  max-width: 30em;
-  width: 30em;
-  margin-left: auto;
-  margin-right: auto;
+    min-width: 300px;
+    max-width: 1024px;
+    width: calc(70vw + 1em);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .entry {
@@ -253,6 +220,8 @@ nav li {
   margin-right: 2vw;
 }
 
+// pagination setting
+
 .pagination {
   text-align: center;
   margin-top: 4vmax;
@@ -260,8 +229,8 @@ nav li {
 }
 
 .pagination .previous {
-  float: left;
-  margin-left: 10vw;
+    float: left;
+    margin-left: 10vw;
 }
 
 .pagination .next {
@@ -269,18 +238,21 @@ nav li {
   margin-right: 10vw;
 }
 
-.codex {
-  column-count: auto;
-  column-width: calc(15vmax + 30px);
-  column-gap: 3vmin;
-}
+ // codex page stylling
 
-.codex li {
-  margin-bottom: 1vmax;
-  text-indent: -1vw;
-  margin-left: 1vw;
-}
+ .codex {
+     column-count: auto;
+     column-width: calc(15vmax + 30px);
+     column-gap: 3vmin;
+ }
 
+ .codex li {
+     margin-bottom: 1vmax;
+     text-indent: -1vw;
+     margin-left: 1vw;
+ }
+
+// footnote setting
 sup {
   vertical-align: super;
   font-size: calc(1.1vmax + 5px);
@@ -290,373 +262,22 @@ div.footnotes::before {
   content: "Footnotes";
   font-size: calc(3vmax + 9px);
   font-weight: 800;
+
   line-height: calc(4vmax + 10px);
+
   margin-left: 1.3vw;
   margin-top: calc(3.3vmax + 10px);
   margin-bottom: 1.5vmax;
 }
 
 div.footnotes {
-  margin-top: 5vmax;
-  margin-left: 1vmax;
-  margin-right: 2vmax;
-  font-size: calc(0.9vmax + 10px);
-}
-
-.highlight {
-  background-color: #efefef;
-  padding: 7px 7px 7px 10px;
-  /* border: 1px solid #ddd; */
-  -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  /* -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
-  margin: 20px 0 20px 0;
-  overflow: auto;
-}
-
-code {
-  font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
-}
-
-.highlight .c {
-  color: #586E75;
-}
-
-/* Comment */
-.highlight .err {
-  color: #93A1A1;
-}
-
-/* Error */
-.highlight .g {
-  color: #93A1A1;
-}
-
-/* Generic */
-.highlight .k {
-  color: #859900;
-}
-
-/* Keyword */
-.highlight .l {
-  color: #93A1A1;
-}
-
-/* Literal */
-.highlight .n {
-  color: #93A1A1;
-}
-
-/* Name */
-.highlight .o {
-  color: #859900;
-}
-
-/* Operator */
-.highlight .x {
-  color: #CB4B16;
-}
-
-/* Other */
-.highlight .p {
-  color: #93A1A1;
-}
-
-/* Punctuation */
-.highlight .cm {
-  color: #586E75;
-}
-
-/* Comment.Multiline */
-.highlight .cp {
-  color: #859900;
-}
-
-/* Comment.Preproc */
-.highlight .c1 {
-  color: #586E75;
-}
-
-/* Comment.Single */
-.highlight .cs {
-  color: #859900;
-}
-
-/* Comment.Special */
-.highlight .gd {
-  color: #2AA198;
-}
-
-/* Generic.Deleted */
-.highlight .ge {
-  color: #93A1A1;
-  font-style: italic;
-}
-
-/* Generic.Emph */
-.highlight .gr {
-  color: #DC322F;
-}
-
-/* Generic.Error */
-.highlight .gh {
-  color: #CB4B16;
-}
-
-/* Generic.Heading */
-.highlight .gi {
-  color: #859900;
-}
-
-/* Generic.Inserted */
-.highlight .go {
-  color: #93A1A1;
-}
-
-/* Generic.Output */
-.highlight .gp {
-  color: #93A1A1;
-}
-
-/* Generic.Prompt */
-.highlight .gs {
-  color: #93A1A1;
-  font-weight: bold;
-}
-
-/* Generic.Strong */
-.highlight .gu {
-  color: #CB4B16;
-}
-
-/* Generic.Subheading */
-.highlight .gt {
-  color: #93A1A1;
-}
-
-/* Generic.Traceback */
-.highlight .kc {
-  color: #CB4B16;
-}
-
-/* Keyword.Constant */
-.highlight .kd {
-  color: #268BD2;
-}
-
-/* Keyword.Declaration */
-.highlight .kn {
-  color: #859900;
-}
-
-/* Keyword.Namespace */
-.highlight .kp {
-  color: #859900;
-}
-
-/* Keyword.Pseudo */
-.highlight .kr {
-  color: #268BD2;
-}
-
-/* Keyword.Reserved */
-.highlight .kt {
-  color: #DC322F;
-}
-
-/* Keyword.Type */
-.highlight .ld {
-  color: #93A1A1;
-}
-
-/* Literal.Date */
-.highlight .m {
-  color: #2AA198;
-}
-
-/* Literal.Number */
-.highlight .s {
-  color: #2AA198;
-}
-
-/* Literal.String */
-.highlight .na {
-  color: #93A1A1;
-}
-
-/* Name.Attribute */
-.highlight .nb {
-  color: #B58900;
-}
-
-/* Name.Builtin */
-.highlight .nc {
-  color: #268BD2;
-}
-
-/* Name.Class */
-.highlight .no {
-  color: #CB4B16;
-}
-
-/* Name.Constant */
-.highlight .nd {
-  color: #268BD2;
-}
-
-/* Name.Decorator */
-.highlight .ni {
-  color: #CB4B16;
-}
-
-/* Name.Entity */
-.highlight .ne {
-  color: #CB4B16;
-}
-
-/* Name.Exception */
-.highlight .nf {
-  color: #268BD2;
-}
-
-/* Name.Function */
-.highlight .nl {
-  color: #93A1A1;
-}
-
-/* Name.Label */
-.highlight .nn {
-  color: #93A1A1;
-}
-
-/* Name.Namespace */
-.highlight .nx {
-  color: #555;
-}
-
-/* Name.Other */
-.highlight .py {
-  color: #93A1A1;
-}
-
-/* Name.Property */
-.highlight .nt {
-  color: #268BD2;
-}
-
-/* Name.Tag */
-.highlight .nv {
-  color: #268BD2;
-}
-
-/* Name.Variable */
-.highlight .ow {
-  color: #859900;
-}
-
-/* Operator.Word */
-.highlight .w {
-  color: #93A1A1;
-}
-
-/* Text.Whitespace */
-.highlight .mf {
-  color: #2AA198;
-}
-
-/* Literal.Number.Float */
-.highlight .mh {
-  color: #2AA198;
-}
-
-/* Literal.Number.Hex */
-.highlight .mi {
-  color: #2AA198;
-}
-
-/* Literal.Number.Integer */
-.highlight .mo {
-  color: #2AA198;
-}
-
-/* Literal.Number.Oct */
-.highlight .sb {
-  color: #586E75;
-}
-
-/* Literal.String.Backtick */
-.highlight .sc {
-  color: #2AA198;
-}
-
-/* Literal.String.Char */
-.highlight .sd {
-  color: #93A1A1;
-}
-
-/* Literal.String.Doc */
-.highlight .s2 {
-  color: #2AA198;
-}
-
-/* Literal.String.Double */
-.highlight .se {
-  color: #CB4B16;
-}
-
-/* Literal.String.Escape */
-.highlight .sh {
-  color: #93A1A1;
-}
-
-/* Literal.String.Heredoc */
-.highlight .si {
-  color: #2AA198;
-}
-
-/* Literal.String.Interpol */
-.highlight .sx {
-  color: #2AA198;
-}
-
-/* Literal.String.Other */
-.highlight .sr {
-  color: #DC322F;
-}
-
-/* Literal.String.Regex */
-.highlight .s1 {
-  color: #2AA198;
-}
-
-/* Literal.String.Single */
-.highlight .ss {
-  color: #2AA198;
-}
-
-/* Literal.String.Symbol */
-.highlight .bp {
-  color: #268BD2;
-}
-
-/* Name.Builtin.Pseudo */
-.highlight .vc {
-  color: #268BD2;
-}
-
-/* Name.Variable.Class */
-.highlight .vg {
-  color: #268BD2;
-}
-
-/* Name.Variable.Global */
-.highlight .vi {
-  color: #268BD2;
-}
-
-/* Name.Variable.Instance */
-.highlight .il {
-  color: #2AA198;
-}
-
-/* Literal.Number.Integer.Long */
+    margin-top: 5vmax;
+    margin-left: 1vmax;
+    margin-right: 2vmax;
+    font-size: calc(0.9vmax + 10px);
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+// @import "svg-icons";
