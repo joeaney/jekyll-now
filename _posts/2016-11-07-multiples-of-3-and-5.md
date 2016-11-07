@@ -9,7 +9,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 
-'''javascript
+```javascript
 var step;
 var till = 1000;
 var watertank = [];
@@ -22,4 +22,4 @@ watertank.push(step);
 }
 }
 console.log("answer is " + v);
-'''
+```
