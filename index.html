@@ -2,32 +2,13 @@
 layout: default
 ---
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+            
+{% include carrier-profile.html %}
+            
+{% include experience.html %}
+            
+{% include projects.html %}
+            
+{% include skills.html %}
 
-<!-- Pagination links -->
-<div class="content">
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-      {% else %}
-        <span class="previous">Previous</span>
-    {% endif %}
 
-    <span class="page_number ">【 {{ paginator.page }} Page of {{ paginator.total_pages }} pages 】</span>
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% else %}
-        <span class="next ">Next</span>
-    {% endif %}
-  </div>
-</div>
