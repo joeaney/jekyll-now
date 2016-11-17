@@ -14,13 +14,13 @@ def Factorizationer(value):
   subMultiples = []
   tValue = value
   i = 1
-  print('i: %s' % i)
+  # print('i: %s' % i)
   while i < tValue:
     i += 1
-    print('i: %s \t tValue: %s' % (i, tValue))
+    # print('i: %s \t tValue: %s' % (i, tValue))
     if tValue % i == 0:
       tValue = int(tValue / i)
-      print('gottcha! %s' % i)
+      # print('gottcha! %s' % i)
       subMultiples.append(i)
       i = 1
       continue
