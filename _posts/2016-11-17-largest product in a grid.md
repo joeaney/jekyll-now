@@ -1,6 +1,7 @@
 ---
 title: Largest product in a grid. problem 11
 date: 2016-11-17
+layout: post
 ---
 In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
 
