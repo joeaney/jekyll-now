@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+</head>
+<body>
+	<h1>A formular for Biogas from Biomass</h1>
+  <input class="carbon" type="text" placeholder="carbon"/>
+  <input class="hydrogen" type="text" placeholder="hydrogen"/>
+  <input class="oxigen" type="text" placeholder="oxigen"/>
+  <input class="nitrogen" type="text" placeholder="nitrogen"/>
+
+	<p>
+		<span class='pr_carbon'></span>
+	</p>
+<script>
+    $(".carbon").keyup(function () {
+      var value = $(this).val();
+      $(".pr_carbon").text(value);
+    }).keyup();
+</script>
+
+</body>
+</html>
