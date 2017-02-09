@@ -124,8 +124,8 @@ h2 {
   line-height: calc(4vmax + 10px);
 
   margin-left: 1.3vw;
-  margin-top: calc(3.3vmax + 10px);
-  margin-bottom: 1.3vmax;
+  margin-top: calc(3.3vmax + 15px);
+  margin-bottom: calc(1.3vmax + 15px);
 }
 
 h3 {
@@ -135,8 +135,10 @@ h3 {
   line-height: calc(4vmax + 10px);
 
   margin-left: 1.3vw;
-  margin-top: calc(3.3vmax + 10px);
-  margin-bottom: 1.3vmax;
+  margin-top: calc(3.3vmax + 15px);
+  margin-bottom: calc(2.3vmax + 15px);
+  font-style: oblique;
+  font-weight: 700;
 }
 
 a, a:link {
