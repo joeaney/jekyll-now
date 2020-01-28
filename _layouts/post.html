@@ -13,7 +13,12 @@ layout: default
     	<p>{{ page.date | date: '%B %-d, %Y' }}</p>
     </div>
     <div class="post__meta">
-    	<p>{{ tags_content }}</p>
+        <p>{{ tags_content }}</p>
+        {% if page.notes %}
+        <div class="__notes">
+            {{ page.notes | markdownify }}
+        </div>
+        {% endif %}
     </div>
     <div class="post__content"?>
         {{ content }}
