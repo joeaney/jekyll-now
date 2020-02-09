@@ -19,6 +19,11 @@ layout: default
             {{ page.notes | markdownify }}
         </div>
         {% endif %}
+        {% if page.source %}
+        <div class="__notes">
+            출처: {{ page.source }}
+        </div>
+        {% endif %}
     </div>
     <div class="post__content"?>
         {{ content }}
