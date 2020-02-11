@@ -1,0 +1,13 @@
+.footnotes {
+position: relative;
+padding-top: 1em;
+
+&::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #323232;
+    width: 30%;
+}
+}
