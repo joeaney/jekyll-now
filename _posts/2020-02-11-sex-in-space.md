@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Sex in Space
+original_title: Sex in Space
 author: Association of Autonomous Astronauts, Luther Blissett
 #SORTauthors Association of Autonomous Astronauts, Luther Blissett
 SORTtopics: patriarchy, sexual repression, space, sex, association of autonomous astronauts
-#date 1990’s
+original_date: 1990’s
 source: Retrieved on November 5th, 2018 from http://www.uncarved.org/AAA/sex.html
 #lang en
 ---
