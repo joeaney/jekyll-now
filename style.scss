@@ -7,92 +7,13 @@
 
 @import "reset";
 @import "variables";
+@import "main";
+@import "userstyle";
 // @import "device-test";
 // Syntax highlighting @import is at the bottom of this file
 
-/***************/
-/* MEYER RESET */
-/***************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
 body {
-  line-height: 1;
-}
-
-ul, ol {
-
-}
-
-.entry ul, .entry ol {
-  margin-left: 2vmax;
-}
-
-ul {
-  list-style: none;
-  margin-bottom: calc(1vmax + 10px);
-}
-
-ol {
-  list-style-type: decimal;
-  display: block;
-}
-
-li p {
-  text-indent: 0;
-}
-
-blockquote, q {
-  quotes: none;
-  width: 90%;
-  color: darkgray;
-  margin: auto;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-// reset done
-
-body {
-  line-height: calc(1.75vmax + 13px);
+  line-height: 130%;
   font-size: calc(1.007vmax + 10px);
   margin: 1vmin;
 }
@@ -266,10 +187,10 @@ sup {
 
 div.footnotes::before {
   content: "Footnotes";
-  font-size: calc(3vmax + 9px);
+  font-size: calc(2vmax + 9px);
   font-weight: 800;
 
-  line-height: calc(4vmax + 10px);
+  line-height: calc(5vmax + 10px);
 
   margin-left: 1.3vw;
   margin-top: calc(3.3vmax + 10px);
@@ -282,6 +203,8 @@ div.footnotes {
     margin-right: 2vmax;
     font-size: calc(0.9vmax + 10px);
 }
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
