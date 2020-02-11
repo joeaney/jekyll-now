@@ -22,6 +22,7 @@ paginate:  10
 
 sass:
   style: compressed
+  sourcemap: true
 
 plugins:
   - jekyll-paginate
