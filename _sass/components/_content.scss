@@ -3,12 +3,30 @@
 \*------------------------------------*/
 
 .c-content {
+  word-break: keep-all;
+  
   a:not(.c-btn) {
     text-decoration: underline;
     text-decoration-skip: ink;
 
     @include attention() {
       color: $color-brand;
+    }
+  }
+
+  &-meta {
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+
+    .label {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    .value {
+      &__date {
+        font-style: oblique;
+      }
     }
   }
 }
