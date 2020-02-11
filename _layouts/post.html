@@ -2,30 +2,38 @@
 layout: default
 ---
 
-<div class="post">
-	<div class="post__back">
-    	<a href="/">&lt;-- home</a>
-    </div>
-    <div class="post__title">
-    	<h1>{{ page.title }}</h1>
-    </div>
-    <div class="post__date">
-    	<p>{{ page.date | date: '%B %-d, %Y' }}</p>
-    </div>
-    <div class="post__meta">
-        <p>{{ tags_content }}</p>
-        {% if page.notes %}
-        <div class="__notes">
-            {{ page.notes | markdownify }}
+{% include base_path %}
+
+{% if page.image %}
+  <meta itemprop='og:image' content='{{ base_path }}{{ page.image }}'>
+{% endif %}
+
+<div class='o-wrapper'>
+  <div class='o-grid'>
+    <div class='o-grid__col'>
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
+
+        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
+
+        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
+
+        <div class='c-content' itemprop='articleBody'>
+          {% include page-image.html %}
+
+          {{ content }}
         </div>
-        {% endif %}
-        {% if page.source %}
-        <div class="__notes">
-            출처: {{ page.source }}
+
+        <div class='c-tags'>
+          {% for tag in page.tags %}
+            <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
+          {% endfor %}
         </div>
-        {% endif %}
+
+        <hr>
+
+        {% include disqus.html %}
+
+      </article>
     </div>
-    <div class="post__content"?>
-        {{ content }}
-    </div>
+  </div>
 </div>
