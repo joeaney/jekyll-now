@@ -20,6 +20,39 @@ layout: default
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
 
+          <ul class="c-content-meta">
+            {% if page.original_title %}
+            <li>
+              <span class="label">original title</span>
+              <span class="value">{{ page.original_title }}</span>
+            </li>
+            {% endif %}
+            {% if page.original_date %}
+            <li>
+              <span class="label">date</span>
+              <span class="value">{{ page.original_date }}</span>
+            </li>
+            {% endif %}
+            {% if page.author %}
+            <li>
+              <span class="label">author</span>
+              <span class="value">{{ page.author }}</span>
+            </li>
+            {% endif %}
+            {% if page.source %}
+            <li>
+              <span class="label">source</span>
+              <span class="value">{{ page.source }}</span>
+            </li>
+            {% endif %}
+            {% if page.notes %}
+            <li>
+              <span class="label">notes</span>
+              <span class="value">{{ page.notes }}</span>
+            </li>
+            {% endif %}
+          </ul>
+
           {{ content }}
         </div>
 
