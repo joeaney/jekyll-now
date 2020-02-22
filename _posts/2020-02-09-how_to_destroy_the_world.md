@@ -4,6 +4,17 @@ title: 어떻게 세계를 박살낼 것인가
 original_title: How to Destroy the World
 author: Ignorant Research Institute
 SORTtopics: identity, power, crime, magic, queer, gender nihilism, nihilism, trans, women, trans women
+tags: 
+    - identity
+    - power
+    - crime
+    - magic
+    - queer
+    - gender nihilism
+    - nihilism
+    - trans
+    - women
+    - trans women
 source: Retrieved on Nov 11 2017 from http://www.azinelibrary.org/zines/How-to-Destroy-the-World
 lang: en
 pubdate: 2017-12-02 09:22:41-0800

@@ -8,6 +8,7 @@ original_title: Anarchafeminist Manifesto
 lang: en
 original_date: 1983
 SORTtopics: feminist
+tags: feminist
 source: 2009년 4월 29일 [[http://info.interactivist.net/node/5109][info.interactivist.net]]에서 발견되었다.
 notes: 아나카-페미니스트 선언의 기원은 노르웨이에 있다. 아나카-페미니스트 선언은 2982년 6월 1일 부터 7일까지 있었던 노르웨이 아나키스트 연맹 제 3차 총회에서 만장일치로 합의된 페미니스트 정치 프로그램의 요약이다. 이 선언문은 1983년 노르웨이어로 “Folkebladet”(IJA) 1호, 4—5페이지에 출간되었다.이후 “선언”이 1983년 “CRIFA-Bulletin” 44호(3-4월 호)에 실린 직후 1983년에 해당 저널 12페이지와 13페이지에 영어, 프랑스어 번역본이 수록되었다. 이후 프랑스어 번역본을 기초로 영어로 번역되어 이후 인터넷에 공개되었다. “선언”은 다른 언어로도 번역되었다. -- 안나 퀴스트가 작성한 아나카-페미니스트 여는 말, 아나카-페미니스트의 공동 작성자. (Translated from French (Bulletin C.R.I.F.A. No 44 mars—avril 1983 p. 12).)
 ---

@@ -3,11 +3,17 @@ layout: post
 title: Sex in Space
 original_title: Sex in Space
 author: Association of Autonomous Astronauts, Luther Blissett
-#SORTauthors Association of Autonomous Astronauts, Luther Blissett
+SORTauthors: Association of Autonomous Astronauts, Luther Blissett
 SORTtopics: patriarchy, sexual repression, space, sex, association of autonomous astronauts
+tags: 
+    - patriarchy
+    - sexual repression
+    - space
+    - sex
+    - association of autonomous astronauts
 original_date: 1990’s
 source: Retrieved on November 5th, 2018 from http://www.uncarved.org/AAA/sex.html
-#lang en
+lang: en
 ---
 
 사람이 집이나 사적인 곳에서, 대체로 친한 친구들과 함께 하는 모든 일 중에서 특히 섹스는 외부로부터 특별한 압력과 간섭 및 통제를 받는다. 이는 우연이 아니다. 모든 이들이 그것의 영향력을 인식하고 있다. 그 안에서라면 단 몇 분간이라도 개인은 사회나 정권의 어떤 시스템도 무의미하게 만들 힘과 에너지를 방출할 수 있다. 그건 해방자이다. 심지어 독방에 감금된 사람도 그것에 빠져들어 속박되지 않은 모든 상황이나 가능성의 세계로, 에너지로 가득한 곳으로 여행할 수도 있고, 오르가즘의 순간에는 환희에 젖어 취약해지고, 거부할 수 없이 자유로워진다.
